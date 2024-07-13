@@ -17,15 +17,3 @@ public class day1 {
         System.out.println("Bye");
     }
 }
-
-/*
-Interview questions:
-1. How to run tests with TestNG?
-Ans: You need to have @Test annotation followed by methods.
-
-You can define multiple tests in a single class.
-
-
-
-
- */
