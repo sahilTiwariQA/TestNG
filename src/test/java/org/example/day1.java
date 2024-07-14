@@ -3,7 +3,7 @@ package org.example;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
-public class day1 {
+public class day1 extends day3{
 
     @AfterTest
     public void lastExecution()

@@ -20,7 +20,7 @@ public class day3 {
         System.out.println("Mobile method CarLoan");
     }
     @Test
-    public void APILoginCarLoan()
+    public void apiLoginCarLoan()
     {
         System.out.println("API method CarLoan");
     }
