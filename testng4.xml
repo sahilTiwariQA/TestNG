@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="URL" value="google.com"/>
+    <parameter name="Username" value="saaaa"/>
+
+    <test verbose="2" preserve-order="true" name="Personal Loan">
+        <classes>
+            <class name="org.example.day1">
+                <methods>
+                    <include name="Demo"/>
+                    <exclude name="Demo2"/>
+                </methods>
+            </class>
+            <class name="org.example.day2">
+                <methods>
+                    <include name="personalLoan"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Car Loan">
+        <classes>
+            <class name="org.example.day3">
+                <methods>
+                <exclude name="mobileLoginCarLoan"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Home Loan">
+        <classes>
+            <class name="org.example.day4">
+                <methods>
+                    <exclude name="mobile.*"/>
+<!--                    //eliminate all test cases which begins with mobile-->
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Parameters">
+        <classes>
+            <class name="org.example.day5">
+            </class>
+        </classes>
+    </test>
+</suite>
