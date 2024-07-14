@@ -2,7 +2,7 @@ package org.example;
 
 import org.testng.annotations.Test;
 public class day4 {
-    @Test
+    @Test(groups = {"Smoke"})
     public void webLoginHomeLoan()
     {
         System.out.println("Weblogin method HomeLoan");

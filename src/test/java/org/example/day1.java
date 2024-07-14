@@ -8,9 +8,9 @@ public class day1 {
     @AfterTest
     public void lastExecution()
     {
-        System.out.println("This will execute last");
+        System.out.println("This will execute after test");
     }
-    @Test
+    @Test(groups = {"Smoke"})
     //This is a TestNG annotation which considers below code as test. So even when you don't write public static void main, below method can be run via TestNG instead of Java.
     public void Demo()
     {
