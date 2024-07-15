@@ -1,5 +1,6 @@
 package org.example;
 
+import junit.framework.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -30,6 +31,12 @@ public class day6 {
     public void getDataProviderValues(String username, String password)
     {
         System.out.println("The username is: "+username +"and password is: "+password);
+    }
+    @Test(dataProvider = "dataProviderExample")
+    public void getDataProviderValuesFailed(String username, String password)
+    {
+        System.out.println("The username is: "+username +"and password is: "+password);
+        Assert.assertTrue(false);
     }
 
 }

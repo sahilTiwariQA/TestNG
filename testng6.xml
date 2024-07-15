@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="org.example.day7"></listener>
+    </listeners>
     <test name="Data Providers">
         <classes>
             <class name="org.example.day6">
